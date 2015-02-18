@@ -6,8 +6,11 @@ Over the next weeks, we will be covering several topics.  We'll loop back over e
 HTML5
 
 Cascading Style Sheets
+	including layouts and animations
 
 Javascript
+
+Jquery
 
 User Interaction & User Experience.
 
