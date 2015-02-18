@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-family: sans-serif; }
+
+.section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+/*# sourceMappingURL=index.css.map */
