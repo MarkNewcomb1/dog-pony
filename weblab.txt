@@ -1,0 +1,14 @@
+Welcome to Weblab.
+
+Over the next weeks, we will be covering several topics.  We'll loop back over each one as you learn other skills to help you improve your understanding and help you become better developers.
+
+
+HTML5
+
+Cascading Style Sheets
+
+Javascript
+
+User Interaction & User Experience.
+
+All of this in a little less than 12 weeks.  
