@@ -1,10 +1,9 @@
 body {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	height: 100vh;
+	padding: 0;
+	margin: 0;
 	overflow: hidden;
-	color: #fff;
 	font-family: sans-serif;
 }
 
@@ -13,5 +12,38 @@ body {
 	flex: 1;
 	justify-content: center;
 	align-items: center;
-	height: 100vh
+	height: 100vh;
+
+	&#landing {
+		background-image: url("../img/3f4eb74a.jpg");
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		line-height: 1;
+
+		span {
+			font-weight: 200;			
+		}
+	}
+
+	&#intro {
+		background-image: url('../img/5f468e98.jpg');
+		background-size: cover;
+	}
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+
+	.nextSectionButton {
+		color: #fff;
+		font-weight: 200;
+		font-size: 12px;
+	}
 }
