@@ -1,0 +1,176 @@
+/* line 1, E:/Projects/dog-pony/scss/vac.scss */
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; }
+  /* line 12, E:/Projects/dog-pony/scss/vac.scss */
+  body video#bgvid, body .filter {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover; }
+  /* line 20, E:/Projects/dog-pony/scss/vac.scss */
+  body .filter {
+    background-color: #fff;
+    opacity: 1;
+    z-index: -90;
+    -webkit-animation: bgMovie 5s ease 1s 1 normal forwards;
+    -o-animation: bgMovie 5s ease 1s 1 normal forwards;
+    animation: bgMovie 5s ease 1s 1 normal forwards; }
+  /* line 31, E:/Projects/dog-pony/scss/vac.scss */
+  body.off video#bgvid, body.off .filter {
+    display: none; }
+
+/* line 38, E:/Projects/dog-pony/scss/vac.scss */
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif; }
+  /* line 46, E:/Projects/dog-pony/scss/vac.scss */
+  .main h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 8px rgba(0, 0, 144, 0.6); }
+  /* line 52, E:/Projects/dog-pony/scss/vac.scss */
+  .main ul, .main li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff; }
+  /* line 60, E:/Projects/dog-pony/scss/vac.scss */
+  .main ul {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 10px; }
+  /* line 67, E:/Projects/dog-pony/scss/vac.scss */
+  .main li {
+    display: block;
+    animation-name: menuSplash;
+    -webkit-animation: menuSplash 1s ease 10s 1 normal forwards;
+    -o-animation: menuSplash 1s ease 10s 1 normal forwards;
+    animation: menuSplash 1s ease 10s 1 normal forwards;
+    opacity: 0;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.24); }
+  /* line 78, E:/Projects/dog-pony/scss/vac.scss */
+  .main li:nth-child(1) {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
+  /* line 78, E:/Projects/dog-pony/scss/vac.scss */
+  .main li:nth-child(2) {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s; }
+  /* line 78, E:/Projects/dog-pony/scss/vac.scss */
+  .main li:nth-child(3) {
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s; }
+  /* line 78, E:/Projects/dog-pony/scss/vac.scss */
+  .main li:nth-child(4) {
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s; }
+  /* line 78, E:/Projects/dog-pony/scss/vac.scss */
+  .main li:nth-child(5) {
+    -webkit-animation-delay: 5.5s;
+    animation-delay: 5.5s; }
+  /* line 78, E:/Projects/dog-pony/scss/vac.scss */
+  .main li:nth-child(6) {
+    -webkit-animation-delay: 6.5s;
+    animation-delay: 6.5s; }
+  /* line 84, E:/Projects/dog-pony/scss/vac.scss */
+  .main li:last-child {
+    border-bottom-width: 0; }
+  /* line 89, E:/Projects/dog-pony/scss/vac.scss */
+  .main .locationLink {
+    text-shadow: 0px 0px 8px rgba(0, 0, 144, 0.6);
+    transition: all 0.25s ease;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding: 4px 0; }
+    /* line 97, E:/Projects/dog-pony/scss/vac.scss */
+    .main .locationLink:hover {
+      cursor: pointer;
+      transform: scale3d(1.25, 1.25, 1.25); }
+
+@-webkit-keyframes menuSplash {
+  /* line 106, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 0; }
+
+  /* line 107, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 1; } }
+
+@-o-keyframes menuSplash {
+  /* line 110, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 0; }
+
+  /* line 111, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes menuSplash {
+  /* line 114, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 0; }
+
+  /* line 115, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 1; } }
+
+@keyframes menuSplash {
+  /* line 118, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 0; }
+
+  /* line 119, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes bgMovie {
+  /* line 123, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 1; }
+
+  /* line 124, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 0.5; } }
+
+@-o-keyframes bgMovie {
+  /* line 127, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 1; }
+
+  /* line 128, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 0.5; } }
+
+@-moz-keyframes bgMovie {
+  /* line 131, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 1; }
+
+  /* line 132, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 0.5; } }
+
+@keyframes bgMovie {
+  /* line 135, E:/Projects/dog-pony/scss/vac.scss */
+  from {
+    opacity: 1; }
+
+  /* line 136, E:/Projects/dog-pony/scss/vac.scss */
+  to {
+    opacity: 0.5; } }

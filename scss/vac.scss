@@ -1,0 +1,137 @@
+body {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+
+
+	video#bgvid, 
+	.filter {
+		position: fixed; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100;
+		background-size: cover;
+
+	}
+
+	.filter {
+		background-color: #fff;
+		opacity: 1;
+		z-index: -90;
+		-webkit-animation: bgMovie 5s ease 1s 1 normal forwards;
+		-o-animation: bgMovie 5s ease 1s 1 normal forwards;
+		animation: bgMovie 5s ease 1s 1 normal forwards;
+	}
+
+	&.off {
+		video#bgvid, 
+		.filter {
+			display: none;
+		}
+	}
+}
+
+
+.main {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+
+
+	h1 {
+		text-align: center;
+		color: #fff;
+		text-shadow: 0px 0px 8px rgba(0,0,144,0.6);
+	}
+
+	ul,li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		color: #fff;
+	}
+
+	ul {
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+		padding: 30px 10px;
+	}
+
+	li {
+		display: block;
+		animation-name: menuSplash;
+		-webkit-animation: menuSplash 1s ease 10s 1 normal forwards;
+		-o-animation: menuSplash 1s ease 10s 1 normal forwards;
+		animation: menuSplash 1s ease 10s 1 normal forwards;		
+		opacity: 0;
+		border-bottom: 1px solid rgba(245, 245, 245, 0.24);
+	}
+
+	@for $i from 1 through 6 {
+	  li:nth-child(#{$i}){
+	    -webkit-animation-delay: .5s + ($i);
+	    animation-delay:  .5s + ($i);
+	  }
+	}
+
+	li:last-child {
+		border-bottom-width: 0;
+	}
+
+
+	.locationLink {
+		text-shadow: 0px 0px 8px rgba(0,0,144,0.6);
+		transition: all .25s ease;
+		display: block;
+		margin-bottom: 5px;
+		font-size: 20px;
+		padding: 4px 0;
+
+		&:hover {
+			cursor: pointer;
+			transform: scale3d(1.25,1.25,1.25);			
+		}
+	}
+
+}
+
+@-webkit-keyframes menuSplash {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+@-o-keyframes menuSplash {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+@-moz-keyframes menuSplash {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+@keyframes menuSplash {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+
+@-webkit-keyframes bgMovie {
+	from { opacity: 1 }
+	to { opacity: 0.5 }
+}
+@-o-keyframes bgMovie {
+	from { opacity: 1 }
+	to { opacity: 0.5 }
+}
+@-moz-keyframes bgMovie {
+	from { opacity: 1 }
+	to { opacity: 0.5 }
+}
+@keyframes bgMovie {
+	from { opacity: 1 }
+	to { opacity: 0.5 }
+}
