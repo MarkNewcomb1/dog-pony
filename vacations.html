@@ -5,24 +5,36 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Weblab Vacations</title>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/vac.css">
 	<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.easing.js"></script>
 	<script src="js/vac.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-	<div class="main">
-		<h1>Wanna Get Away?</h1>
-		<div>
-			<ul>
-				<li><a class="locationLink">South Pacific</a></li>
-				<li><a class="locationLink">Miami</a></li>
-				<li><a class="locationLink">New York City</a></li>
-				<li><a class="locationLink">Paris</a></li>
-				<li><a class="locationLink">London</a></li>
-				<li><a class="locationLink">Dubai</a></li>
-			</ul>
+	<h1>Wanna Get Away?</h1>
+	<nav>
+		<ul>
+			<li><a class="locationLink" data-index="0" data-terms="south pacific beaches" data-weather="Noumea">South Pacific</a></li>
+			<li><a class="locationLink" data-index="1" data-terms="Milan Fashion" data-weather="Milan,It">Milan</a></li>
+			<li><a class="locationLink" data-index="2" data-terms="New York City Arts Music" data-weather="New York City">New York City</a></li>
+			<li><a class="locationLink" data-index="3" data-terms="Paris Wallpaper" data-weather="Paris, FR">Paris</a></li>
+			<li><a class="locationLink" data-index="4" data-terms="London Wallpaper" data-weather="London">London</a></li>
+			<li><a class="locationLink" data-index="5" data-terms="Dubai Wallpaper" data-weather="Dubai">Dubai</a></li>
+		</ul>
+	</nav>
+	<div class="weather">
+		<div class="name"></div>
+		<div class="temp"></div>
+		<div class="condition">
+			<span class="icon"></span>
+			<span class="text"></span>
 		</div>
 	</div>
+	<div class="messaging">
+		
+	</div>
+	<div class="hero"></div>
 	<div class="filter"></div>
 	<video autoplay muted poster="img/bgMovie.jpg" id="bgvid">
 	 <source src="img/bgMovie3.mp4" type="video/mp4">
