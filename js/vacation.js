@@ -86,8 +86,13 @@ $(function() {
   }
 
   function processBing(result) {
-    var index = Math.floor(Math.random() * 50) + 1
-    var url = result.d.results[index].MediaUrl;
+    if(!result || !result.d || !result.d.results) {
+      return; // we have an error, abort!
+    }
+
+    var data = result.d.results
+      , index = Math.floor(Math.random() * data.length)
+      , url = data[index].MediaUrl;
 
     background.hide().css({
         "background-image":"url(" + url + ")",
